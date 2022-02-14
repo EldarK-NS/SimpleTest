@@ -26,6 +26,10 @@
       "repositories/*": ["src/repositories/*"],
       "services/*": ["src/services/*"],
       "store/*": ["src/store/*"],
+      "icons/*": ["src/assets/icons/*"],
+      "theme/*": ["src/theme/*"],
+      "hooks/*": ["src/hooks/*"],
+      "lang/*": ["src/lang/*"],
       "nav/*": ["src/navigation/*"],
       "screens/*": ["src/screens/*"]
     },

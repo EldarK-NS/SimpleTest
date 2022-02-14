@@ -18,6 +18,7 @@ export default class UsersStore extends BaseStore {
       success: res => {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         //@ts-ignore
+        console.log('RES', JSON.stringify(res, null, 2));
         this.users = res;
       },
     });

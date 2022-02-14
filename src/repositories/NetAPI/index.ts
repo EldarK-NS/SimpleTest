@@ -80,28 +80,6 @@ export default class NetAPI {
   }
 
   /**
-   * Generate formData from object,
-   * group__name => group[name]
-   * @param {object} data
-   * @returns {formData}
-   */
-  public getFormData(data: {[key in string]: any}) {
-    const formData = new FormData();
-
-    for (const dataKey in data) {
-      if (data.hasOwnProperty(dataKey)) {
-        const keys = dataKey.split('__');
-        const key = keys.length === 1 ? keys[0] : `${keys[0]}[${keys[1]}]`;
-        const value = data[dataKey as keyof typeof data];
-
-        formData.append(key, value);
-      }
-    }
-
-    return formData;
-  }
-
-  /**
    * Return first error from response errors object
    * @param {object} errors - response errors object
    * @returns {error: string}

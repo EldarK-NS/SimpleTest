@@ -15,6 +15,7 @@ const UsersCards: React.FC = () => {
   useEffect(() => {
     usersStore.getUsers();
   }, []);
+
   return (
     <View>
       <FlatList
