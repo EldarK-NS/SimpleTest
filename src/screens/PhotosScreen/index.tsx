@@ -3,6 +3,7 @@ import {PhotosNavigatorParamsList} from 'nav/types';
 import FilterModal from 'organisms/FilterModal';
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
+import Photos from 'templates/Photos';
 
 export interface IPhotosScreenProps {
   navigation: NativeStackNavigationProp<

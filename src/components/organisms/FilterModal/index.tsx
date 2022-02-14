@@ -52,7 +52,7 @@ const FilterModal = () => {
         ref={bottomSheetRef}
         snapPoints={snapPoints}
         onChange={handleSheetChanges}
-        enablePanDownToClose={close}>
+        enablePanDownToClose={true}>
         <BottomSheetView style={styles.contentContainer}>
           <FlatList
             data={albums}
